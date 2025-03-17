@@ -6,7 +6,7 @@ This is a collaborative fullstack web application designed to deliver a seamless
 ## 🧑‍🤝‍🧑 Meet the Team
 | Name   | Role                  | GitHub Profile |
 |--------|-----------------------|-----------------|
-| **Shifa Shaikh**  | Project Lead & Backend Developer | [shifantasticc](https://github.com/shifantasticc) |
+| **Shifa Shaikh**  | Backend Developer & Project Lead | [shifantasticc](https://github.com/shifantasticc) |
 | **Zoya Shaikh**   | Backend Developer              | [Zoya-sK](https://github.com/Zoya-sK) |
 | **Fareen Hayat** | Frontend Developer             | [Fareenhayat0505](https://github.com/Fareenhayat0505) |
 | **Aqsa Shaikh**   | Frontend Developer             | [aqsa1504](https://github.com/aqsa1504) |
