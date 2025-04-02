@@ -20,7 +20,7 @@ export default async function createQuestionCollection() {
         databases.createStringAttribute(db,questionCollection,"tags",50,true,undefined,true),
         databases.createStringAttribute(db,questionCollection,"attachmentId",50,false),
     ]); 
-    console.log("Question Attribute created") 
+    console.log("Question Attribute created")
 
     //create Indexes 
     /*await Promise.all([ 
@@ -40,7 +40,6 @@ export default async function createQuestionCollection() {
             ["content"], 
             ['asc']
         )
-    ]) 
+    ])
     */
-        
 }
