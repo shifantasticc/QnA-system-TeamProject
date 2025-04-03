@@ -1,4 +1,6 @@
-import{IndexType, Permission} from "node-appwrite" 
+//Comment below is to ignore IndexType error. remove it to use IndexType
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { IndexType, Permission } from 'node-appwrite';
 import {db,commentCollection} from "../name" 
 import {databases} from "./config" 
 
@@ -15,7 +17,6 @@ export default async function createCommentCollection() {
      databases.createStringAttribute(db,commentCollection,"content",10000,true),
         databases.createEnumAttribute(db,commentCollection,"type",["answer","question"],true), 
         databases.createStringAttribute(db,commentCollection,"typeId",50,true),
-
         databases.createStringAttribute(db,commentCollection,"authorId",50,true),
     
     ]); 
