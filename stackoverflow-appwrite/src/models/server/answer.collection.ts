@@ -1,5 +1,3 @@
-//Comment below is to ignore IndexType error. remove it to use IndexType
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { IndexType, Permission } from 'node-appwrite';
 import { answerCollection, db } from '../name';
 import { databases } from './config';
