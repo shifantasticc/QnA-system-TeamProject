@@ -1,27 +1,19 @@
 "use client";
 
-import { client } from '@/models/server/config';
-import { useAuthStore } from '@/store/Auth';
-import { useRouter } from 'next/router';
-import React from 'react';
+import { useAuthStore } from "@/store/Auth";
+import { redirect } from "next/navigation"; // ✅ Correct way to redirect in App Router
+import React from "react";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const { session } = useAuthStore();
-  const router = useRouter();
-
-  React.useEffect(() => {
-    if (session) {
-      router.push('/');
-    }
-  }, [session, router]);
 
   if (session) {
-    return null;
+    redirect("/"); // ✅ Use `redirect()` instead of `useRouter()`
   }
 
   return (
-    <div className="">
-      <div className="">{children}</div>
+    <div className="auth-layout">
+      {children} {/* ✅ Ensure children are always rendered */}
     </div>
   );
 };
